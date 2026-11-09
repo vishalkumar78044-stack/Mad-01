@@ -2,7 +2,7 @@ from jinja2 import Template
 
 # lis = ["anushka","janhvi","anshika","ahole mkd"]
 
-tem = Template("""my lovers list is here:
+tem = Template("""my students list is here:
         <ul>
             <li>
             {%for i in ll%}
