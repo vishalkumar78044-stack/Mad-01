@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="btn head">
+        <h2 class="btn">are you sure! to delete {{datas.name}}</h2><br><br></p>
+        <form method="POST" action="{{url_for('delete',id=datas.id)}}">
+            <table>
+                <button class="safe" name="act" value="cancle">
+                    <p class="button"> cancle </p>
+                </button>
+                <button class="denger" name="act" value="delete">
+                    <p class="button"> Delete </p>
+                </button>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+</html>

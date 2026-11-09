@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1 class="btn">All data present</h1>
+    <form action="{{ url_for('edit',id=datas.id) }}" method="POST" >
+        <table class="btn" border="2">
+            <tr class="head">
+                <th>ID</th>
+                <th>Name</th>
+                <th>E-mail</th>
+            </tr>
+            <tr class="body">
+                <td>{{datas.id}}</td>
+                <td><input name="name" type="text" value="{{datas.name}}"></td>
+                <td><input name="email" type="email" value="{{datas.email}}"></td>
+            </tr>
+        
+        </table><br>
+        <div class="btn"><button class="safe" type="submit"><p class="button"> Save Values </p></button></div>
+    </form>
+</body>
+
+</html>

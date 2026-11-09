@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <h1 class="btn">All data present</h1>
+    
+    <table class="btn" border="2">
+        <tr class="head">
+            <th>ID</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>tools</th>
+        </tr>
+        {% for data in datas %}
+        <tr class="body">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.email}}</td>
+            <td><a href="{{url_for('edit',id=data.id)}}">Edit </a><a href="{{url_for('delete',id=data.id)}}"> Delete</a></td>
+        </tr>
+        {% endfor %}
+    
+    
+        
+    </table>
+    <br>
+    <div class="btn"><a href="{{url_for('add')}}"> <p class="login button">Enter Data </p></a></div>
+    
+
+</body>
+
+</html>

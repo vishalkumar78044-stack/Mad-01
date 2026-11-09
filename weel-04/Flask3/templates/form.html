@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form name="form" method="post">
+    <br>
+    <div>
+        <label for="name">Name :</label>
+        <input type="text" name="name" placeholder="Enter your name">
+    </div>
+    <br><hr><br>
+    <div>
+        <label>Class</label>
+        <input type="int" name="class" placeholder="class">
+    </div>
+    <br><hr><br>
+    <div>
+        <label>Email</label>
+        <input type="text" name="Email" placeholder="Enter your email" >
+        <br><br>
+        <textarea name="message" placeholder="Enter your message "></textarea>
+    </div>
+    <br><hr><br>
+    <button type="submit">Submit</button>
+</form>
+{% endblock %}

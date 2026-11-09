@@ -1,0 +1,196 @@
+                           GIT & GITHUB
+                                │
+          ┌─────────────────────┴─────────────────────┐
+          │                                           │
+        GIT                                       GITHUB
+          │                                           │
+          ├─ Tracks file changes                      ├─ Stores code online
+          ├─ Version control system                   ├─ Backup of projects
+          └─ Installed on computer                    └─ Collaboration
+
+                                │
+                                ▼
+                      START A NEW PROJECT
+                                │
+        ┌───────────────────────┴───────────────────────┐
+        │                                               │
+        ▼                                               ▼
+  Create Folder                                   Enter Folder
+
+ mkdir myproject                               cd myproject
+
+                                │
+                                ▼
+                        Initialize Git
+
+                           git init
+
+                                │
+                                ▼
+                        Check Changes
+
+                          git status
+
+                                │
+                                ▼
+                         Add Files
+                                │
+            ┌───────────────────┴───────────────────┐
+            │                                       │
+            ▼                                       ▼
+
+     git add app.py                          git add .
+
+      One File                               All Files
+
+                                │
+                                ▼
+                           Commit
+                                │
+
+               git commit -m "Initial commit"
+
+                                │
+                                ▼
+                      Create GitHub Repo
+                                │
+
+                    GitHub → New Repository
+
+                                │
+                                ▼
+                    Connect Local to GitHub
+
+   git remote add origin https://github.com/user/repo.git
+
+                                │
+                                ▼
+                         First Push
+                                │
+
+                       git branch -M main
+                                │
+                                ▼
+                    git push -u origin main
+
+                                │
+                                ▼
+                       CODE ON GITHUB
+
+═══════════════════════════════════════════════════════
+
+                    DAILY WORKFLOW
+
+       Make Changes
+             │
+             ▼
+       git status
+             │
+             ▼
+        git add .
+             │
+             ▼
+ git commit -m "message"
+             │
+             ▼
+        git push
+             │
+             ▼
+      Code Updated on GitHub
+
+═══════════════════════════════════════════════════════
+
+                  DOWNLOAD A PROJECT
+
+                     git clone URL
+                             │
+                             ▼
+                         cd repo
+
+═══════════════════════════════════════════════════════
+
+                  GET LATEST CHANGES
+
+                       git pull
+
+═══════════════════════════════════════════════════════
+
+                  MOST USED COMMANDS
+
+git init
+   │
+   └─ Start Git
+
+git status
+   │
+   └─ Check changes
+
+git add .
+   │
+   └─ Stage files
+
+git commit -m "msg"
+   │
+   └─ Save snapshot
+
+git log
+   │
+   └─ View history
+
+git push
+   │
+   └─ Upload code
+
+git pull
+   │
+   └─ Download updates
+
+git clone URL
+   │
+   └─ Download repository
+
+═══════════════════════════════════════════════════════
+
+                 COMPLETE FLOW
+
+Write Code
+    │
+    ▼
+git init
+    │
+    ▼
+git add .
+    │
+    ▼
+git commit
+    │
+    ▼
+Create GitHub Repo
+    │
+    ▼
+git remote add origin URL
+    │
+    ▼
+git push
+    │
+    ▼
+Code Stored on GitHub
+
+
+WRITE CODE
+    ↓
+ADD
+    ↓
+COMMIT
+    ↓
+PUSH
+    ↓
+GITHUB
+
+(ACPG Rule)
+
+A = Add
+C = Commit
+P = Push
+G = GitHub
+

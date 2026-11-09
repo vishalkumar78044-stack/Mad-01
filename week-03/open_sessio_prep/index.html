@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Data reading</title>
+</head>
+<body>
+    <h1>Products</h1>
+    {% for product in Products | groupby("producer") %}
+        <table border="1">
+        <h1>{{product.grouper}}</h1>
+        <tr>
+                <th>Product id</th>
+                <th>Product name</th>
+                <th>Producer</th>
+        </tr>
+        {% for item in product.list %}
+        
+            <tr>
+                <td>
+                    {{ item.product_id }}
+                </td>
+                <td>
+                    {{ item.prod_name }}
+                </td>
+                <td>
+                    {{ item.producer }}
+                </td>
+            </tr>
+        {% endfor %}
+        </table>
+        <h2>No of Product in {{product.grouper}} is : {{product.list | length}}</h2>
+    {% endfor %}
+
+
+
+</body>
+</html>

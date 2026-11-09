@@ -1,0 +1,32 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head{
+    color: rgb(87, 24, 36);
+    font-size: larger;
+}
+
+.body{
+    color: rgb(105, 144, 66);
+}
+.login{
+    background-color: hsla(240, 80%, 58%, 0.893);
+    
+}
+.sign{
+    background-color: rgb(66, 217, 116);
+}
+.safe{
+    background-color: rgb(26, 233, 85);
+}
+.denger{
+    background-color: rgb(221, 85, 85);
+}
+.button{
+    padding: 4px;
+    margin: 2px;
+    border-radius: 3px;
+}
